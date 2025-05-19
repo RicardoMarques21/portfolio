@@ -1,0 +1,50 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: #61dafb;
+    font-size: 1.2rem;
+    animation: fadeOut 0.5s ease-out forwards 2.5s;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.infinity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-infinity {
+    font-size: 6rem;
+    background: linear-gradient(270deg, #61dafb, #21a1f1, #00c9a7, #61dafb);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShift 4s ease infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,8 @@
+section ul {
+    list-style: disc inside;
+    color: #cfd8dc;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+}

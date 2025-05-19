@@ -1,5 +1,5 @@
 /* ----------------------------------------------
-   RESET BÁSICO
+   RESET & BASE
 ---------------------------------------------- */
 * {
   margin: 0;
@@ -9,48 +9,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212; /* preto escuro */
-  color: #e0e0e0; /* cinza claro para texto */
+  background-color: #121212;
+  color: #e0e0e0;
   line-height: 1.6;
-}
-
-/* ----------------------------------------------
-   NAVBAR
----------------------------------------------- */
-nav {
-  background: #1f1f1f;
-  color: #61dafb;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-nav h1 {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav ul li a {
-  color: #61dafb;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #21a1f1;
-  text-decoration: underline;
 }
 
 /* ----------------------------------------------
@@ -63,7 +24,7 @@ nav ul li a:hover {
 }
 
 /* ----------------------------------------------
-   SECTIONS GLOBAIS
+   SECTION GLOBAL STYLES
 ---------------------------------------------- */
 section {
   background: #1f1f1f;
@@ -92,95 +53,17 @@ section p {
 }
 
 /* ----------------------------------------------
-   HOME SECTION
+   ANIMAÇÕES GLOBAIS
 ---------------------------------------------- */
-.home-section {
-  display: flex;
-  flex-direction: column;
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.photo-text-container {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.home-text {
-  flex: 1;
-}
-
-.home-text h2 {
-  color: #61dafb;
-  margin-bottom: 0.5rem;
-}
-
-.home-text p {
-  font-size: 1.1rem;
-  color: #e0e0e0;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #61dafb;
-  box-shadow: 0 0 10px #21a1f1;
-  display: block;
-}
-
-/* ----------------------------------------------
-   DEVOPS ANIMATIONS SECTION
----------------------------------------------- */
-/*.devops-animations {*/
-/*  margin-left: calc(150px + 2rem); !* largura da imagem + gap *!*/
-/*}*/
-
-.devops-animations h3 {
-  color: #61dafb;
-  margin-bottom: 2rem;
-  font-weight: 600;
-  border-bottom: 2px solid #21a1f1;
-  padding-bottom: 0.3rem;
-  max-width: max-content;
-}
-
-.icons-container {
-  margin-bottom: 2rem;
-  display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.icon-with-label {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #e0e0e0;
-  font-size: 0.95rem;
-  width: 80px;
-}
-
-.devops-icon {
-  font-size: 3rem;
-  color: #61dafb;
-  animation: pulse 2.5s infinite ease-in-out;
-  transition: color 0.3s ease;
-}
-
-.devops-icon:hover {
-  color: #21a1f1;
-  animation: none;
-}
-
-.icon-with-label span {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #cfd8dc;
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
 }
 
 @keyframes pulse {
@@ -195,57 +78,10 @@ section p {
 }
 
 /* ----------------------------------------------
-   FADE-IN ANIMATION
----------------------------------------------- */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* ----------------------------------------------
-   PROJECT LIST STYLING
----------------------------------------------- */
-section ul {
-  list-style: disc inside;
-  color: #cfd8dc;
-}
-
-section ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* ----------------------------------------------
-   RESPONSIVE
+   RESPONSIVO GERAL
 ---------------------------------------------- */
 @media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .App {
     margin: 1rem;
-  }
-
-  .photo-text-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-
-  .icons-container {
-    justify-content: center;
   }
 }

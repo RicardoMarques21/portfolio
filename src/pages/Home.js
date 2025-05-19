@@ -1,6 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import profilePic from '../assets/Foto.jpg';
+import '../styles/Home.css'
 
 
 export default function Home() {

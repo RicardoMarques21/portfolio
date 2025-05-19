@@ -1,11 +1,13 @@
 import React from 'react';
-import { FaDocker } from 'react-icons/fa';
-import './Preloader.css';
+import '../styles/Preloader.css';
+import { FaInfinity } from 'react-icons/fa';
 
 export default function Preloader() {
     return (
         <div className="preloader">
-            <FaDocker className="preloader-icon" />
+            <div className="infinity-container">
+                <FaInfinity className="animated-infinity" />
+            </div>
             <p>Loading Portfolio...</p>
         </div>
     );

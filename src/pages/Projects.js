@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import '../styles/Projects.css'
 
 export default function Projects() {
     const { ref, inView } = useInView({

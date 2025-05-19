@@ -1,0 +1,36 @@
+.home-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-text-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h2 {
+    color: #61dafb;
+    margin-bottom: 0.5rem;
+}
+
+.home-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #61dafb;
+    box-shadow: 0 0 10px #21a1f1;
+    display: block;
+}

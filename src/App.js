@@ -22,7 +22,7 @@ function App() {
     }
 
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Navbar />
             <div className="App">
                 <Routes>
