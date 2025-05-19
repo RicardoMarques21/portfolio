@@ -6,7 +6,7 @@ export default function Preloader() {
     return (
         <div className="preloader">
             <FaDocker className="preloader-icon" />
-            <p>Loading DevOps Portfolio...</p>
+            <p>Loading Portfolio...</p>
         </div>
     );
 }
