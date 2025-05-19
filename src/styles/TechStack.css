@@ -1,0 +1,59 @@
+/*.devops-animations {*/
+/*  margin-left: calc(150px + 2rem); !* largura da imagem + gap *!*/
+/*}*/
+
+.devops-animations h3 {
+    color: #61dafb;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #21a1f1;
+    padding-bottom: 0.3rem;
+    max-width: max-content;
+}
+
+.icons-container {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.icon-with-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    width: 80px;
+}
+
+.devops-icon {
+    font-size: 3rem;
+    color: #61dafb;
+    animation: pulse 2.5s infinite ease-in-out;
+    transition: color 0.3s ease;
+}
+
+.devops-icon:hover {
+    color: #21a1f1;
+    animation: none;
+}
+
+.icon-with-label span {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #cfd8dc;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}

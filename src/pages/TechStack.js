@@ -2,6 +2,7 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import {FaAws, FaDatabase, FaDocker, FaGitAlt, FaJava, FaJenkins, FaNodeJs, FaReact} from "react-icons/fa";
 import {SiJavascript, SiKubernetes, SiMongodb, SiPostgresql, SiSpringboot} from "react-icons/si";
+import '../styles/TechStack.css'
 
 export default function TechStack() {
     const { ref, inView } = useInView({
